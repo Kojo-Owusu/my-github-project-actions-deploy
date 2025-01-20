@@ -1,0 +1,141 @@
+* {
+  block-size: border-box;
+}
+
+body {
+  background-color: rgb(243, 241, 235);
+  margin: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+header img {
+  width: 45px;
+}
+
+h1 {
+  color: rgb(11, 11, 32);
+  width: fit-content;
+  font-size: 15px;
+  margin: 0;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul a {
+  border: 4px rgb(146, 147, 145);
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: lighter;
+  margin-right: 20px;
+}
+
+nav ul a:hover {
+  color: blueviolet;
+}
+
+header div a:hover {
+  color: red;
+}
+
+main {
+  margin: 0;
+}
+
+.welcome-img {
+  width: 100%;
+}
+
+.welcome {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: rgb(138, 78, 10);
+}
+
+.welcome-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(7, 79, 79);
+  margin: 3px;
+  padding: 3px;
+}
+
+.activities ul {
+  list-style: none;
+  padding: 3px;
+}
+
+.activities ul li {
+  margin: 0;
+  padding: 3px;
+  color: rgb(91, 23, 174);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.upcoming-events img {
+  width: 100%;
+}
+
+.upcoming-events {
+  display: flex;
+  display: contents;
+  border: 1px;
+  padding: 20px;
+  margin: 0px;
+  font-size: x-large;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(215, 179, 87);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.contact-list li {
+  margin: 10px;
+}
+
+.contact-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-list a:hover {
+  color: rgb(41, 138, 86);
+  text-decoration: underline;
+}
