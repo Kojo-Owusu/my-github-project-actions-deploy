@@ -9,8 +9,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      -name: Project code
-      uses: actions/project@v3
+      -name: Checkout code
+      uses: actions/checkout@v3
 
       -name: Deploy to Netlify
       uses: nwtgck/actions-netlify@v2
