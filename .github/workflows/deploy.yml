@@ -1,1 +1,21 @@
+name: Deploy to Netlifly
 
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      -name: Project code
+      uses: actions/project@v3
+
+      -name: Deploy to Netlify
+      uses: nwtgck/actions-netlify@v2
+      with:
+      publish-dir: ./
+      production-branch: main
+      netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
